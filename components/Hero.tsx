@@ -3,8 +3,9 @@ import { siteConfig } from "@/config/site-config";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 tunnel-bg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brown-primary/5 to-bg" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -15,31 +16,31 @@ export default function Hero() {
               <span className="w-2 h-2 rounded-full bg-gold animate-pulse" style={{ animationDelay: '1s' }} />
             </div>
             
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black leading-[0.9] animate-fade-in tracking-tight">
-              <span className="block bg-gradient-to-r from-gold via-brown-light to-gold bg-clip-text text-transparent text-glow">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-black leading-[0.95] sm:leading-[0.9] animate-fade-in tracking-tight">
+              <span className="block bg-gradient-to-r from-gold via-brown-light to-gold bg-clip-text text-transparent text-glow animate-glow-pulse">
                 {siteConfig.hero.title}
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light animate-fade-in" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
               {siteConfig.hero.subtitle}
             </p>
 
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3 animate-fade-in" style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}>
               {siteConfig.hero.bullets.map((bullet, i) => (
-                <div key={i} className="flex items-start gap-3 text-left">
-                  <span className="text-gold mt-1 text-xl">▸</span>
-                  <p className="text-gray-400">{bullet}</p>
+                <div key={i} className="flex items-start gap-2 sm:gap-3 text-left group hover:translate-x-2 transition-transform duration-300">
+                  <span className="text-gold mt-1 text-lg sm:text-xl group-hover:scale-125 transition-transform">▸</span>
+                  <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors">{bullet}</p>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-4 animate-fade-in" style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}>
               <a
                 href={siteConfig.links.pump}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="btn-primary text-center"
               >
                 {siteConfig.hero.primaryCta}
               </a>
@@ -47,7 +48,7 @@ export default function Hero() {
                 href={siteConfig.links.tg}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="btn-secondary text-center"
               >
                 {siteConfig.hero.secondaryCtas[0]}
               </a>
@@ -55,15 +56,16 @@ export default function Hero() {
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center">
-            <div className="relative w-full max-w-[350px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px] aspect-square">
-              <div className="absolute inset-0 bg-gradient-to-r from-brown-primary/20 to-gold/20 blur-3xl rounded-full" />
+            <div className="relative w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[550px] xl:max-w-[650px] aspect-square">
+              <div className="absolute inset-0 bg-gradient-to-r from-brown-primary/20 to-gold/20 blur-3xl rounded-full animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 via-transparent to-brown-primary/10 blur-2xl rounded-full animate-float" />
               <div className="absolute inset-0 animate-dig">
                 <Image
                   src="/logo.png"
-                  alt="NIGGLET"
+                  alt="NIGGLET - The Underground Hustler"
                   width={2000}
                   height={2000}
-                  className="animate-fade-in drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500 w-full h-full object-contain"
+                  className="animate-fade-in drop-shadow-2xl relative z-10 hover:scale-105 active:scale-95 transition-transform duration-500 w-full h-full object-contain"
                   priority
                 />
               </div>
