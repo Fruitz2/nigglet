@@ -4,7 +4,10 @@ import { siteConfig } from "@/config/site-config";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 tunnel-bg" />
+      <div className="absolute inset-0 mesh-gradient" />
+      <div className="floating-orb" style={{ top: '10%', left: '10%', width: '300px', height: '300px', animationDelay: '0s' }} />
+      <div className="floating-orb" style={{ bottom: '20%', right: '15%', width: '200px', height: '200px', animationDelay: '3s' }} />
+      <div className="floating-orb" style={{ top: '50%', left: '70%', width: '150px', height: '150px', animationDelay: '6s' }} />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-brown-primary/5 to-bg" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
@@ -17,7 +20,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-black leading-[0.95] sm:leading-[0.9] animate-fade-in tracking-tight">
-              <span className="block bg-gradient-to-r from-gold via-brown-light to-gold bg-clip-text text-transparent text-glow animate-glow-pulse">
+              <span className="block bg-gradient-to-r from-gold via-brown-light to-gold bg-clip-text text-transparent">
                 {siteConfig.hero.title}
               </span>
             </h1>
@@ -56,9 +59,9 @@ export default function Hero() {
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center">
-            <div className="relative w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[550px] xl:max-w-[650px] aspect-square">
-              <div className="absolute inset-0 bg-gradient-to-r from-brown-primary/20 to-gold/20 blur-3xl rounded-full animate-pulse" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 via-transparent to-brown-primary/10 blur-2xl rounded-full animate-float" />
+            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] aspect-square">
+              <div className="absolute inset-0 bg-gradient-to-r from-brown-primary/30 to-gold/30 blur-[100px] rounded-full animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-gold/20 via-transparent to-brown-primary/20 blur-[80px] rounded-full animate-float" />
               <div className="absolute inset-0 animate-dig">
                 <Image
                   src="/logo.png"

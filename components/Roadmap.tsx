@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Roadmap() {
   return (
-    <section id="roadmap" className="py-24 px-6 bg-surface/30">
+    <section id="roadmap" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-4xl md:text-6xl font-display font-bold mb-16 text-center bg-gradient-to-r from-gold to-brown-light bg-clip-text text-transparent">
           {siteConfig.roadmap.title}

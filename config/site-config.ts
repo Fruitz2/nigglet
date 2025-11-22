@@ -76,7 +76,7 @@ export const siteConfig = {
       {
         label: "3",
         title: "Cop $NIGG",
-        body: "Head to Pump.fun or Jupiter, paste the contract address, and swap your SOL for $NIGG. Welcome to the underground.",
+        body: "Head to Pump.fun, paste the contract address, and swap your SOL for $NIGG. Welcome to the underground.",
       },
       {
         label: "4",

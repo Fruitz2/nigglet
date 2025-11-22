@@ -1,11 +1,24 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/site-config";
+import AnimatedBackground from "@/components/AnimatedBackground";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: "#0a0a0a",
+};
 
 export const metadata: Metadata = {
-  title: siteConfig.meta.title,
+  metadataBase: new URL("https://nigglet.vercel.app"),
+  title: {
+    default: siteConfig.meta.title,
+    template: "%s | NIGGLET",
+  },
   description: siteConfig.meta.description,
-  keywords: "NIGGLET, Solana, meme coin, crypto, $NIGG, underground, blockchain, Diglett, Pokemon meme",
+  keywords: ["NIGGLET", "Solana", "meme coin", "crypto", "$NIGG", "underground", "blockchain", "Diglett", "Pokemon meme", "DeFi", "Web3", "cryptocurrency"],
   authors: [{ name: "NIGGLET Team" }],
   creator: "NIGGLET",
   publisher: "NIGGLET",
@@ -56,8 +69,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <meta name="theme-color" content="#FFD700" />
+      </head>
+      <body>
+        <AnimatedBackground />
+        <main className="relative z-10">{children}</main>
+      </body>
     </html>
   );
 }

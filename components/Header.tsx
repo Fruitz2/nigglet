@@ -6,8 +6,8 @@ import { siteConfig } from "@/config/site-config";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-bg/80 border-b border-brown-primary/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-bg/90 to-transparent">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Image
             src="/logo.png"
