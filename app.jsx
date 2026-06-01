@@ -14,8 +14,8 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "stickyChip": true
 }/*EDITMODE-END*/;
 
-const TG  = "https://t.me/solananigglet";
-const X   = "https://x.com/Solananigglet";
+const TG  = "https://t.me/niggletonpump";
+const X   = "https://x.com/niggletonpump";
 const PF  = "https://pump.fun";
 const LOGO = "assets/nigglet.png";
 const CARD_CHAMO = "assets/chamo.jpg";
@@ -514,8 +514,8 @@ function Receipt() {
               <div className="r"><span>Launchpad</span><b>PUMP.FUN</b></div>
               <div className="r"><span>Token contract</span><b>not deployed</b></div>
               <div className="r"><span>Bootleg date</span><b>{new Date().getFullYear()}</b></div>
-              <div className="r"><span>Telegram</span><b><a href={TG} target="_blank" rel="noreferrer">t.me/solananigglet</a></b></div>
-              <div className="r"><span>X</span><b><a href={X} target="_blank" rel="noreferrer">@Solananigglet</a></b></div>
+              <div className="r"><span>Telegram</span><b><a href={TG} target="_blank" rel="noreferrer">t.me/niggletonpump</a></b></div>
+              <div className="r"><span>X</span><b><a href={X} target="_blank" rel="noreferrer">@niggletonpump</a></b></div>
             </div>
 
             <div className="disclaim">

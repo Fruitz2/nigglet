@@ -6,8 +6,8 @@ export const siteConfig = {
   },
   links: {
     pump: "https://pump.fun/coin/REPLACE_ME",
-    x: "https://x.com/Solananigglet",
-    tg: "https://t.me/solananigglet",
+    x: "https://x.com/niggletonpump",
+    tg: "https://t.me/niggletonpump",
     contract: "REPLACE_ME",
   },
   hero: {
